@@ -1,0 +1,29 @@
+{{#if success_message}}
+<div class="alert alert-success">
+  {{success_message}}
+</div>
+{{/if}}
+{{#if error_message}}
+<div class="alert alert-danger">
+  {{error_message}}
+</div>
+{{/if}}
+{{#if error}}
+<div class="alert alert-danger">
+  {{error}}
+</div>
+{{/if}}
+{{#if success_alert}}
+<script>
+  $(function () {
+    swal("Done!", "{{ success_alert }}", "success")
+  })
+</script>
+{{/if}}
+{{#if error_alert}}
+<script>
+  $(function () {
+    swal("Error!", "{{ error_alert }}", "error")
+  })
+</script>
+{{/if}}

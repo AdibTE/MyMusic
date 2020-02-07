@@ -1,0 +1,34 @@
+{{#if data}}
+<!-- Blog Entries Column -->
+<div class="col-md-12">
+  <h1 class="my-4">
+    Music
+  </h1>
+  <div class="row">
+    {{#each data}}
+    <!-- Blog Post -->
+    <div class="col-md-3">
+      <div class="card mb-4">
+        <img class="card-img-top" src="{{album.cover_big}}" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title">
+            {{title}}
+          </h5>
+          <p class="card-text">
+            <audio src="{{preview}}" controls style="width:100%"></audio>
+          </p>
+          <a href="/{{artist.name}}/{{id}}" class="btn btn-primary">
+            Read More &rarr;
+          </a>
+        </div>
+        <div class="card-footer text-muted">
+          Album : {{album.title}}
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+{{else}}
+{{> home/404page}}
+{{/if}}
