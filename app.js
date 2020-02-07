@@ -30,6 +30,6 @@ app.get('*', function(req, res) {
 
 // Listen
 
-app.listen(process.env.port, () => {
-    console.log(`[ LISTENING ON PORT ${process.env.port} ]`);
+app.listen(process.env.PORT, () => {
+    console.log(`[ LISTENING ON PORT ${process.env.PORT} ]`);
 });
