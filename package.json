@@ -1,0 +1,31 @@
+{
+    "name": "musicapi",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^3.1.0",
+        "method-override": "^3.0.0",
+        "node-openvpn": "^0.1.1",
+        "unirest": "^0.6.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "node app"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AdibTE/MyMusic.git"
+    },
+    "keywords": [
+        "music"
+    ],
+    "author": "AdibTE",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AdibTE/MyMusic/issues"
+    },
+    "homepage": "https://github.com/AdibTE/MyMusic#readme"
+}
