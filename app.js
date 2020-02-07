@@ -29,6 +29,7 @@ app.get('*', function(req, res) {
 });
 
 // Listen
-app.listen(2020, () => {
-    console.log(`[ LISTENING ON PORT ${2020} ]`);
+
+app.listen(process.env.port, () => {
+    console.log(`[ LISTENING ON PORT ${process.env.port} ]`);
 });
