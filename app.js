@@ -29,7 +29,7 @@ app.get('*', function(req, res) {
 });
 
 // Listen
-
-app.listen(process.env.PORT, () => {
-    console.log(`[ LISTENING ON PORT ${process.env.PORT} ]`);
+let port = process.env.PORT || 2020;
+app.listen(port, () => {
+    console.log(`[ LISTENING ON PORT ${port} ]`);
 });

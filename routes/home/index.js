@@ -25,8 +25,8 @@ router.get('/', (req, res) => {
 
     reqUrl.end(function(resp) {
         if (res.error) res.send(resp.error);
-        // res.send(resp.body);
-        res.render('home/artist', { data: resp.body.data });
+        res.send(resp.body);
+        // res.render('home/artist', { data: resp.body.data });
     });
 });
 
